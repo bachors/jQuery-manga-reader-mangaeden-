@@ -38,7 +38,7 @@ body * {
 	font-size: 34px;
 }
 
-strong{
+strong, th{
 	color:#444;
 }
 
@@ -90,6 +90,10 @@ strong{
 table {
 	width: 100%;
 	margin-top: 20px;
+}
+
+th {
+	text-align:left;
 }
 
 hr {
