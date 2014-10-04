@@ -1,0 +1,200 @@
+/* Custom your style */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #1a1a1a;
+	font-family: Arial,sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	color: #aaa;
+	position: relative;
+	-webkit-text-size-adjust: none;
+}
+
+body * {
+	text-shadow: none;
+}
+
+.ibacor_capter{
+	background-color: rgba(0, 0, 0, 0.5);
+	color:#fff;
+	padding: 20px;
+	width:100%;
+}
+
+.ibacor_manga_det img {
+	width: 100%;
+}
+
+.ibacor_manga_inpo h1{
+	color:#444;
+	line-height: 34px;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+	font-size: 34px;
+}
+
+strong{
+	color:#444;
+}
+
+.btn {
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	padding: 5px 10px 5px 10px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
+	transition: border .25s linear,color .25s linear,background-color .25s linear;
+	margin-right: 2px;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #333
+}
+
+.ibacor_chapter {
+	background-color: #F26454;
+	border-color: #F04F3D;
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+}
+
+.ibacor_tombol {
+	background-color: #5AD37A;
+	border-color: #50CE6D;
+	color: #fff;
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+}
+
+.ibacor_kategori {
+	color: #fff;
+	border: none;
+	padding: 5px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
+	transition: border .25s linear,color .25s linear,background-color .25s linear;
+	background-color: #333;
+	border-color: #50CE6D;
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+	margin-right: 2px;
+}
+
+table {
+	width: 100%;
+	margin-top: 20px;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ibacor-manga-top hr {
+	border: 0;
+	height: 0;
+	border-top: 2px solid rgba(0, 0, 0, 0.7);
+	border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+}
+
+a  {
+	text-decoration: none;
+}
+
+.ibacor-unit {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	overflow: hidden;
+	*overflow: visible;
+}
+
+.ibacor-manga-katuhu {
+	width:29.95%;
+	float:right
+}
+
+.ibacor-manga-kenca {
+	width:70%;
+}
+
+div.ibacor-manga-top {
+	color: #c0c0c0;
+	background:#1a1a1a;
+	padding:20px;
+	display:block;
+	overflow:hidden;
+	*overflow:visible;
+}
+
+div.ibacor-manga-bottom {
+	color: #c0c0c0;
+	height: 500px;
+	overflow-y: scroll;
+	background:#222222;
+	display:block;
+}
+
+span.ibacor-manga-vw{
+	font-size: 12px;
+	color: #878787;
+}
+
+.bcr_manga_inpo {
+	cursor:pointer;
+	margin:0;
+	padding:20px;
+	display:block;
+	overflow:hidden;
+	*overflow:visible;
+}
+
+div.bcr_manga_inpo:hover {
+	background:#525252;
+}
+
+.bcr_manga_inpo-active {
+	color: #e44;
+	background:#3a3a3a;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1045px) {
+	.ibacor_manga_inpo h1 {font-size: 26px;line-height: 24px;}
+	.ibacor-manga-katuhu {width:35%}
+	.ibacor-manga-kenca {width:65%}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body {font-size: 14px;line-height: 24px}
+	span.ibacor-manga-vw{font-size: 10px;}
+	.ibacor_manga_inpo h1 {font-size: 20px;line-height: 20px;}
+	.ibacor-manga-katuhu {width:35%}
+	.ibacor-manga-kenca {width:65%}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {font-size: 14px;line-height: 24px}
+	span.ibacor-manga-vw{font-size: 10px;}
+	.ibacor_manga_inpo h1 {font-size: 18px;line-height: 20px;}
+	.ibacor-manga-katuhu {width:100%}
+	.ibacor-manga-kenca {width:100%;margin-bottom:20px}
+}
+
+@media screen and (max-width:479px){
+	body {font-size: 12px;line-height: 22px}
+	span.ibacor-manga-vw{font-size: 8px;}
+	.ibacor_manga_inpo h1 {font-size: 16px;line-height: 18px;}
+	.ibacor-manga-katuhu{margin:0}
+	.ibacor-manga-kenca {margin:0 0 20px 0}
+	.ibacor-unit{width:auto;margin-left:0;display:block;margin-top:0}
+}
