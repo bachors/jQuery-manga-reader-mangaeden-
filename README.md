@@ -8,4 +8,4 @@ jQuery manga reader (mangaeden) <a href="http://mangaeden.com/api/" target="_BLA
 var pehape = 'http://yourdomain.com/plugin/mangaedenAPI.php';
 </pre>
 
-<h1><a href="http://ibacor.com/download/manga-reader/" target="_BLANK">DEMO</a></h1>
+<h1><a href="http://ibacor.com/download/demo/manga-reader/" target="_BLANK">DEMO</a></h1>
