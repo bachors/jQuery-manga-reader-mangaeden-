@@ -4,8 +4,133 @@
 * http://ibacor.com/labs/jquery-manga-reader-mangaeden/
 * Updates will be posted to this site.
 ******************************************************/
-
-// Example setting URL mangaedenAPI.php
-var pehape = 'http://yourdomain.com/plugin/mangaedenAPI.php';
 	
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('m($(Z).1p()>=1q){$(Z).1r(4(){m($(9).1s()>0){$(\'.7\').v(\'w\',\'10\');$(\'.J\').v(\'w\',\'10\')}1t{$(\'.7\').v(\'w\',\'11\');$(\'.J\').v(\'w\',\'11\')}})}7(1u,0);4 7(d,e){$.K({L:d+\'?M=1v/0/?p=\'+e,N:O,P:\'Q\'}).R(4(b){f c=\'\',o=1w(b[0].o/1x);c+=\'<6 5="q-8-12">\';c+=\'<2 g="S:1y"><2 5="13"><x y="z" 5="r A" s="<<"></2> \';c+=e+\'/\'+o;c+=\' <2 5="14"><x y="z" 5="r A" s=">>"></2></2>\';c+=\'<2 g="S:T">1z <15>\';1A(f i=0;i<=o;i++){c+=\'<16 s="\'+i+\'" 5="17">\'+i+\'</16>\'}c+=\'</15></2>\';c+=\'</6>\';c+=\'<6 5="q-8-1B">\';$.u(b[0].8,4(i,a){c+=\'<6 5="B" C-18="\'+b[0].8[i].i+\'">\'+b[0].8[i].t+\'<1C><2 5="q-8-1D">\'+b[0].8[i].h+\' 1E</2></6>\'});c+=\'</6><6 g="19-T:U"><2 g="S:T;"><a 1F="1a://q.V/1G/" 1H="1I" g="1J:#1K" W="?">?</a></2></6>\';$(\'.7\').D(c);m(e>0){$(\'.13\').j(4(){7(d,e-1);k l})}m(e<o){$(\'.14\').j(4(){7(d,e+1);k l})}$(\'.17\').j(4(){f a=$(9).1L();7(d,a);k l});$(".B").u(4(){$(9).j(4(){f a=$(9).1b("C-18");$(\'6\').1M(\'B-1c\');$(9).1N(\'B-1c\');$(\'.n\').D(\'\');X(d,a);k l})})})}4 X(d,e){$.K({L:d+\'?M=8/\'+e+\'/\',N:O,P:\'Q\'}).R(4(b){f c=\'\';c+=\'<6 g="1O:#1P;19:U;"><1d><1e>\'+b[0].W+\'</1e></1d><1Q><E>1R: </E>\';$.u(b[0].1f,4(i,a){c+=\'<2 5="1S">\'+b[0].1f[i]+\'</2>\'});c+=\'<6 g="1T-12:U;"><E>1U: </E>\'+b[0].1V+\'</6>\';c+=\'<1g><F><G>1h</G><G>1W</G></F>\';$.u(b[0].H,4(i,a){c+=\'<F><I><1i 5="1j r 1X" C-1k="\'+b[0].H[i][3]+\'">1h \'+b[0].H[i][0]+\'</1i></I><I>\'+b[0].H[i][1]+\'</I></F>\'});c+=\'</1g></6>\';$(\'.X\').D(c);$(".1j").u(4(){$(9).j(4(){f a=$(9).1b("C-1k");n(d,a,0);k l})})})}4 n(c,d,e){$.K({L:c+\'?M=1Y/\'+d+\'/\',N:O,P:\'Q\'}).R(4(a){f b=\'\',Y=a[0].1l.1Z;b+=\'<6 5="J">\';b+=\'<2 5="1m"><x y="z" 5="r A" s="<<"></2> \';b+=\'<2>\'+e+\'/\'+(Y-1)+\'</2> \';b+=\'<2 5="1n"><x y="z" 5="r A" s=">>"></2>\';b+=\'</6>\';b+=\'<20 21="1a://22.1o.V/23/\'+a[0].1l[e][1]+\'" 24="" W="25 26 1o 27 28 q.V">\';$(\'.n\').D(b);m(e<Y){$(\'.1n\').j(4(){n(c,d,e+1);k l})}m(e>0){$(\'.1m\').j(4(){n(c,d,e-1);k l})}})}',62,133,'||span||function|class|div|ibacor_manga_list|manga|this||||||var|style|||click|return|false|if|ibacor_manga_det|total||ibacor|btn|value||each|css|position|input|type|submit|ibacor_tombol|bcr_manga_inpo|data|html|strong|tr|th|chapters|td|ibacor_capter|ajax|url|sub|crossDomain|true|dataType|json|done|float|right|20px|com|title|ibacor_manga_inpo|leng|window|fixed|static|top|bcr_back|bcr_next|select|option|bachorscp|vvv|padding|http|attr|active|center|h1|categories|table|Chapter|button|bcr_manga_det|ccc|images|bcr_capter_back|bcr_capter_next|mangaeden|width|768|scroll|scrollTop|else|pehape|list|parseInt|500|left|Jump|for|bottom|br|vw|Views|href|labs|target|_BLANK|color|444|val|removeClass|addClass|background|fff|hr|Category|ibacor_kategori|margin|Description|description|Uploaded|ibacor_chapter|chapter|length|img|src|cdn|mangasimg|alt|jquery|plugin|api|by'.split('|'),0,{}))
+if ($(window).width() >= 768) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('.ibacor_manga_list').css('position', 'fixed');
+            $('.ibacor_capter').css('position', 'fixed')
+        } else {
+            $('.ibacor_manga_list').css('position', 'static');
+            $('.ibacor_capter').css('position', 'static')
+        }
+    })
+}
+
+ibacor_manga_list(0);
+
+function ibacor_manga_list(e) {
+	var x = 'list/0/?p=' + e;
+	$.ajax({
+		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=http://datatables.org/alltables.env'
+	}).done(function(z) {
+		var b = z.query.results.resources.content.json;
+		var c = '',
+            total = parseInt(b.total / 500);
+        c += '<div class="ibacor-manga-top">';
+        c += '<span style="float:left"><span class="bcr_back"><input type="submit" class="btn ibacor_tombol" value="<<"></span> ';
+        c += e + '/' + total;
+        c += ' <span class="bcr_next"><input type="submit" class="btn ibacor_tombol" value=">>"></span></span>';
+        c += '<span style="float:right">Jump <select>';
+        for (var i = 0; i <= total; i++) {
+            c += '<option value="' + i + '" class="bachorscp">' + i + '</option>'
+        }
+        c += '</select></span>';
+        c += '</div>';
+        c += '<div class="ibacor-manga-bottom">';
+        $.each(b.manga, function(i, a) {
+            c += '<div class="bcr_manga_inpo" data-vvv="' + b.manga[i].i + '">' + b.manga[i].t + '<br><span class="ibacor-manga-vw">' + b.manga[i].h + ' Views</span></div>'
+        });
+        c += '</div><div style="padding-right:20px"><span style="float:right;"><a href="https://github.com/bachors/jQuery-manga-reader-mangaeden-" target="_BLANK" style="color:#444" title="?">?</a></span></div>';
+        $('.ibacor_manga_list').html(c);
+        if (e > 0) {
+            $('.bcr_back').click(function() {
+                ibacor_manga_list(e - 1);
+                return false
+            })
+        }
+        if (e < total) {
+            $('.bcr_next').click(function() {
+                ibacor_manga_list(e + 1);
+                return false
+            })
+        }
+        $('.bachorscp').click(function() {
+            var a = $(this).val();
+            ibacor_manga_list(a);
+            return false
+        });
+        $(".bcr_manga_inpo").each(function() {
+            $(this).click(function() {
+                var a = $(this).attr("data-vvv");
+                $('div').removeClass('bcr_manga_inpo-active');
+                $(this).addClass('bcr_manga_inpo-active');
+                $('.ibacor_manga_det').html('');
+                ibacor_manga_inpo(a);
+                return false
+            });
+        });
+	});	
+}
+
+function ibacor_manga_inpo(e) {
+    var x = 'manga/' + e + '/';
+	$.ajax({
+		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=http://datatables.org/alltables.env'
+	}).done(function(z) {
+		var b = z.query.results.resources.content.json;
+		var ex = b.chapters.length - 1;
+		ibacor_manga_det(b.chapters[ex].json[3], 0);
+        var c = '';
+        c += '<div style="background:#fff;padding:20px;"><center><h1>' + b.title + '</h1></center><hr><strong>Category: </strong>';
+        $.each(b.categories, function(i, a) {
+            c += '<span class="ibacor_kategori">' + b.categories[i] + '</span>'
+        });
+        c += '<div style="margin-top:20px;"><strong>Description: </strong>' + b.description + '</div>';
+        c += '<table><tr><th>Chapter</th><th>Uploaded</th></tr>';
+        $.each(b.chapters, function(i, a) {
+                var date = new Date(b.chapters[i].json[1] * 1000),
+                    time = date.toGMTString();
+            c += '<tr><td><button class="bcr_manga_det btn ibacor_chapter" data-ccc="' + b.chapters[i].json[3] + '">Chapter ' + (parseInt(b.chapters[i].json[0])+1) + '</button></td><td>' + time + '</td></tr>'
+        });
+        c += '</table></div>';
+        $('.ibacor_manga_inpo').html(c);
+        $(".bcr_manga_det").each(function() {
+            $(this).click(function() {
+                var a = $(this).attr("data-ccc");
+                ibacor_manga_det(a, 0);
+                return false
+            });
+        });
+    });
+}
+
+function ibacor_manga_det(d, e) {
+    var x = 'chapter/' + d + '/';
+	$.ajax({
+		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=http://datatables.org/alltables.env'
+	}).done(function(z) {
+		var a = z.query.results.resources.content.json;
+        var b = '',
+            leng = a.images.length;
+        b += '<div class="ibacor_capter">';
+        b += '<span class="bcr_capter_back"><input type="submit" class="btn ibacor_tombol" value="<<"></span> ';
+        b += '<span>' + e + '/' + (leng - 1) + '</span> ';
+        b += '<span class="bcr_capter_next"><input type="submit" class="btn ibacor_tombol" value=">>"></span>';
+        b += '</div>';
+        b += '<img src="http://cdn.mangaeden.com/mangasimg/' + a.images[e].json[1] + '" alt="" title="jquery plugin mangaeden api by @bachors">';
+        $('.ibacor_manga_det').html(b);
+        if (e < leng) {
+            $('.bcr_capter_next').click(function() {
+                ibacor_manga_det(d, e + 1);
+                return false
+            })
+        }
+        if (e > 0) {
+            $('.bcr_capter_back').click(function() {
+                ibacor_manga_det(d, e - 1);
+                return false
+            });
+        }
+    });
+}
