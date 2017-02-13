@@ -22,7 +22,7 @@ ibacor_manga_list(0);
 function ibacor_manga_list(e) {
 	var x = 'list/0/?p=' + e;
 	$.ajax({
-		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=http://datatables.org/alltables.env'
+		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=store://datatables.org/alltableswithkeys'
 	}).done(function(z) {
 		var b = z.query.results.resources.content.json;
 		var c = '',
@@ -76,7 +76,7 @@ function ibacor_manga_list(e) {
 function ibacor_manga_inpo(e) {
     var x = 'manga/' + e + '/';
 	$.ajax({
-		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=http://datatables.org/alltables.env'
+		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=store://datatables.org/alltableswithkeys'
 	}).done(function(z) {
 		var b = z.query.results.resources.content.json;
 		var ex = b.chapters.length - 1;
@@ -108,7 +108,7 @@ function ibacor_manga_inpo(e) {
 function ibacor_manga_det(d, e) {
     var x = 'chapter/' + d + '/';
 	$.ajax({
-		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=http://datatables.org/alltables.env'
+		url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="http://www.mangaeden.com/api/' + x + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=json&env=store://datatables.org/alltableswithkeys'
 	}).done(function(z) {
 		var a = z.query.results.resources.content.json;
         var b = '',
